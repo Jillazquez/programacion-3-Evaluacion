@@ -62,5 +62,36 @@ Integer[] e ={45,67,3,10,7,28};
   0  1  2  3
   16 24 73 8
   8 24 73 16
-  
+
   8 3
+
+# Metodo Selección directa
+Este metodo consigue el numero menor del vector hace que todos los numeros a su izquierda corran una posicion para dejar en primera posicion al menor dejandolo fijado y empezando la proxima vez desde el numero siguiente [Ejercicio Seleccion Directa](seleccion.java)
+```java
+//Ejemplo de una de las implementaciones
+Integer[] e = {16,24,15,5,6,72};
+        int posicion=0;
+        int menor=0;
+        int aux=0;
+        for(int i =0;i<e.length;i++){
+            menor=e[i];
+            posicion=i;
+            for(int j=i;j<e.length;j++){
+                if(menor>e[j]){
+                    posicion=j;
+                    menor=e[j];
+                }
+            }
+           aux = e[i];
+            e[i]=e[posicion];
+            e[posicion]=aux;
+        }
+Seguiria este orden
+16 24 15 5 6 72
+5 16 24 15 6 72 
+5 6 16 24 15 72 
+5 6 15 16 24 72 
+5 6 15 16 24 72 
+5 6 15 16 24 72 
+5 6 15 16 24 72 
+```

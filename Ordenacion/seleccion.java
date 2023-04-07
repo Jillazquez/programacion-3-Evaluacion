@@ -2,6 +2,11 @@ package Ordenacion;
 
 public class seleccion {
     public static void main(String[] args) {
+       
+        /*
+         *Hay dos maneras implementadas para realizarlo la que esta sin comentar cambia la posicion del numero menor con el primer numero que comprobamos 
+         *@jillazquez
+         */
         Integer[] e = {16,24,15,5,6,72};
         int posicion=0;
         int menor=0;
@@ -9,7 +14,6 @@ public class seleccion {
         for(int i =0;i<e.length;i++){
             menor=e[i];
             posicion=i;
-            //System.out.println(menor);
             for(int j=i;j<e.length;j++){
                 if(menor>e[j]){
                     posicion=j;
@@ -21,6 +25,7 @@ public class seleccion {
             e[posicion]=aux;
         }
         /*
+        La segunda manera consigue el numero menor y corre una posiciona a derecha a todos los numeros para dejar al menor en la primera posicion
         for(int i =0;i<e.length;i++){
             menor=e[i];
             posicion=i;
