@@ -1,7 +1,7 @@
 # Ejercicios Repaso programacion
 ### Enunciados de ejercicios sobre polimorfismo y herencia en java con mi solucion
 ## Ej 1
-Enunciado:<br>
+<b>Enunciado:</b><br>
 Ejercicio: Sistema de Empleados
 
 Se desea modelar un sistema que permita gestionar empleados de una empresa. Para ello, se han definido las siguientes clases:
@@ -202,3 +202,41 @@ Utiliza el método hacerCaballito en el objeto Moto.
 Utiliza el método cambiarAceite en el objeto Moto.
 Imprime las propiedades de cada objeto de nuevo para verificar que los métodos han funcionado correctamente.
 [Solucion](PracticaExamen_7/Vehiculo.java)
+
+## Ej 8
+¡Por supuesto! Aquí te dejo un ejercicio similar sin dar pistas sobre cómo implementarlo:
+
+Crea una clase abstracta llamada "Animal" con los siguientes atributos:
+
+Un nombre
+Una edad
+Un género
+
+Crea tres clases que extiendan de "Animal": "Perro", "Gato" y "Pájaro". Cada una de estas clases debe tener un método que permita que el animal haga su sonido característico.
+
+Crea una interfaz llamada "Mascota" con los siguientes métodos:
+
+"jugar()": método que permita jugar con la mascota.
+"alimentar()": método que permita alimentar a la mascota.
+
+Haz que la clase "Perro" implemente la interfaz "Mascota". Implementa los métodos de la interfaz de tal forma que al jugar con el perro, este muestre en pantalla un mensaje de felicidad y al alimentarlo muestre un mensaje de agradecimiento.
+
+Haz lo mismo para la clase "Gato", pero en este caso, al jugar con el gato, este debería mostrar en pantalla un mensaje de indiferencia y al alimentarlo, un mensaje de agradecimiento.
+
+Por último, haz que la clase "Pájaro" también implemente la interfaz "Mascota". Implementa los métodos de tal forma que al jugar con el pájaro, este muestre en pantalla un mensaje de felicidad y al alimentarlo muestre un mensaje de agradecimiento.
+
+Crea una clase "Dueño" con los siguientes atributos:
+
+Un nombre
+Una edad
+Una lista de mascotas.
+
+Agrega a la clase "Dueño" un método llamado "jugarConMascotas()" que llame al método "jugar()" de cada una de sus mascotas.
+
+Agrega a la clase "Dueño" un método llamado "alimentarMascotas()" que llame al método "alimentar()" de cada una de sus mascotas.
+
+Crea una instancia de "Dueño" y agrégale un perro, un gato y un pájaro.
+
+Llama al método "jugarConMascotas()" y "alimentarMascotas()" para la instancia creada en el paso anterior.
+
+[Solucion](PracticaExamen_8/Animal.java)
