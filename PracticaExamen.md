@@ -240,3 +240,69 @@ Crea una instancia de "Dueño" y agrégale un perro, un gato y un pájaro.
 Llama al método "jugarConMascotas()" y "alimentarMascotas()" para la instancia creada en el paso anterior.
 
 [Solucion](PracticaExamen_8/Animal.java)
+
+## Ej 9
+Ejercicio:
+
+Imagina que trabajas para una empresa de ventas de coches, y te han encargado implementar un programa para la gestión de su inventario. Cada coche en el inventario tiene una marca, un modelo, un año de fabricación, un precio de venta y un número de unidades disponibles. Tu objetivo es implementar las clases necesarias para representar los coches en el programa.
+
+Los requisitos son los siguientes:
+
+    La clase Coche debe tener los siguientes atributos:
+
+    Marca (String)
+    Modelo (String)
+    Año de fabricación (int)
+    Precio de venta (double)
+    Unidades disponibles (int)
+
+    Debe haber un constructor que permita crear un objeto Coche con los atributos indicados.
+
+    Debe haber métodos de acceso (getters) para obtener los valores de los atributos.
+
+    Debe haber métodos de modificación (setters) para modificar los valores de los atributos Precio de venta y Unidades disponibles.
+
+    Debe haber un método toString que permita obtener una cadena con la información del coche en formato legible.
+
+    Debe haber un método equals que permita comparar dos coches y determinar si son iguales o no (dos coches son iguales si tienen la misma marca, modelo y año de fabricación).
+
+    Debe haber un método vender que permita reducir el número de unidades disponibles en uno cada vez que se vende un coche.
+
+    Debe haber un método añadir que permita aumentar el número de unidades disponibles en una cantidad dada cada vez que se añaden coches al inventario.
+
+    Debe haber un método buscar que permita buscar un coche en el inventario por marca, modelo y año de fabricación, y devolver el objeto Coche correspondiente si se encuentra o null si no se encuentra.
+
+    En la clase principal del programa, se deben crear varios objetos Coche y realizar algunas operaciones sobre ellos, como cambiar el precio de venta de uno de los coches, vender un coche y añadir varios coches al inventario.
+
+    Al final del programa, se debe imprimir la lista de coches en el inventario en formato legible, con un coche por línea, incluyendo su marca, modelo, año de fabricación, precio de venta y número de unidades disponibles.
+
+¡Espero que te guste este ejercicio y te ayude a practicar! Si tienes alguna pregunta, no dudes en preguntar.
+
+[Solucion](PracticaExamen_9/Coche.java)
+
+## Ej 10
+¡Por supuesto! Aquí te dejo un ejercicio que incluye herencia, polimorfismo y excepciones:
+
+Supongamos que se desea desarrollar una aplicación para una tienda que vende libros, música y películas. La tienda ofrece descuentos a sus clientes fieles. Todos los productos de la tienda tienen un título y un precio. Además, los libros tienen un autor y un número de páginas, la música tiene un artista y un género, y las películas tienen un director y un género.
+
+Se pide implementar el siguiente modelo de clases:
+
+La clase Producto representa un producto genérico de la tienda. Tiene como atributos el título y el precio. Esta clase debe implementar los métodos getTitulo, setTitulo, getPrecio y setPrecio.
+
+La clase Libro es una subclase de Producto. Además de los atributos de Producto, tiene un autor y un número de páginas. Esta clase debe implementar los métodos getAutor, setAutor, getNumPaginas y setNumPaginas.
+
+La clase Musica es una subclase de Producto. Además de los atributos de Producto, tiene un artista y un género. Esta clase debe implementar los métodos getArtista, setArtista, getGenero y setGenero.
+
+La clase Pelicula es una subclase de Producto. Además de los atributos de Producto, tiene un director y un género. Esta clase debe implementar los métodos getDirector, setDirector, getGenero y setGenero.
+
+La clase Cliente representa un cliente de la tienda. Tiene como atributos el nombre del cliente y un número de identificación. Además, tiene un método comprar que recibe un producto y su cantidad y lo agrega a una lista de compras. La clase debe implementar también el método getDescuento, que devuelve el descuento que el cliente tiene en sus compras.
+
+La clase Tienda representa la tienda en sí. Tiene como atributos una lista de clientes y una lista de productos disponibles. Además, tiene un método vender que recibe un cliente, un producto y su cantidad y actualiza la lista de compras del cliente y la lista de productos disponibles. Si el cliente es un cliente fiel, el precio del producto se reducirá en un 10%. Si el producto no está disponible, se lanzará una excepción ProductoNoDisponibleException.
+
+Para probar la implementación, se debe crear una instancia de la clase Tienda y agregar algunos clientes y productos. Luego, se deben realizar algunas compras y verificar que el descuento de los clientes fieles se aplique correctamente.
+
+¡Espero que te sirva como práctica! Si tienes alguna pregunta o necesitas ayuda, no dudes en preguntar.
+
+[Solucion](PracticaExamen_010/Cliente.java)
+
+## Ej 11
