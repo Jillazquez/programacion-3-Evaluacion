@@ -99,7 +99,8 @@ Seguiria este orden
 
 # Metodo Shell
 Shell: 6 10 3 54 1 27
-N/2=3 a: 6 54 b: 10 1 c: 3 27
+<br>
+(N/2=3) A: 6 54 | B: 10 1 | C: 3 27
 <br>
 Los ordenas a: 6 54 b: 1 10 c: 3 27 Ahora ponemos en una lista primero los pequeños y despues los grandes<br>
 Shell: 6 1 3 54 10 27

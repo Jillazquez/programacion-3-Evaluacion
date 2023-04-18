@@ -3,7 +3,7 @@ package Ordenacion;
 public abstract class Ordenar implements Ordenable{
     protected Comparable[] v;
 
-    public Ordenar (Comparable[] c){
+    public Ordenar (Integer[] c){
         v=c.clone();
     }
     public String toString(){
