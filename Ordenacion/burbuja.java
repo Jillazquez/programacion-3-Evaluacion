@@ -1,13 +1,8 @@
 package Ordenacion;
 
-public class burbuja extends Ordenar {
+public class burbuja {
 
-    public burbuja(Comparable[] c) {
-        super(c);
-    }
-
-    @Override
-    public void ordenar(Integer[] e) {
+    public static void ordenar(Integer[] e) {
         int ayuda = 0;
         for (int i = 0; i < e.length; i++) {
             for (int j = i + 1; j < e.length; j++) {
@@ -17,16 +12,20 @@ public class burbuja extends Ordenar {
                     e[j] = ayuda;
                 }
             }
-            for (int k = 0; k < e.length; k++) {
-                System.out.print(e[k] + " ");
-            }
-            System.out.println();
+
+        }
+        for (int k = 0; k < e.length; k++) {
+            System.out.print(e[k] + " ");
         }
     }
 
     public static void main(String[] args) {
-        int ayuda = 0;
-        Integer[] e = { 45, 67, 3, 10, 7, 28 };
-
+        burbuja b = new burbuja();
+        long tik_actual = System.currentTimeMillis();
+        Integer[] v = {43,1,42,56,10,6,23,76,3,5};
+        burbuja.ordenar(v);
+        System.out.println();
+        System.out.println(System.currentTimeMillis()-tik_actual);
     }
+
 }

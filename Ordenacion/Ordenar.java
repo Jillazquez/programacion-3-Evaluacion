@@ -1,19 +1,14 @@
 package Ordenacion;
 
 public abstract class Ordenar implements Ordenable{
-    protected Comparable[] v;
+	protected Integer[] v = {43,1,42,56,10,6,23,76,3,5};
 
-    public Ordenar (Integer[] c){
-        v=c.clone();
-    }
-    public String toString(){
-        return "hola";
-    }
-    protected void intercambio(int i, int j){
-        int aux;
-        aux = v[i];
-        v[i] = v[j];
-        v[j] = aux;
-    }
-    
+	public  void ordenar(Comparable[] c){
+		v =c.clone();
+	}
+
+	public void copiar(){
+		
+	}
+
 }

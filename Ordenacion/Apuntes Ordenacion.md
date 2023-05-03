@@ -106,4 +106,24 @@ Los ordenas a: 6 54 b: 1 10 c: 3 27 Ahora ponemos en una lista primero los peque
 Shell: 6 1 3 54 10 27
 N/4 = 1 
 
+```java
+Integer[] shell = { 6, 10, 3, 54, 1, 27, 4};
+        int n = shell.length;
+        int d = n / 2;
+    
+        while (d > 0) {
+            for (int i = d; i < n; i++) {
+                int aux = shell[i];
+                int j = i;
+    
+                while (j >= d && shell[j - d] > aux) {
+                    shell[j] = shell[j - d];
+                    j -= d;
+                }
+                shell[j] = aux;
+            }
+            d /= 2;
+        }
+```
+
 [Ejercicio Shell](Shell.java)
