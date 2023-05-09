@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ej1;
 
 public class ej1{
     
@@ -21,11 +21,10 @@ public class ej1{
     /*
      * Metodo que añade un punto dado a la pila
      */
-    public void push(Punto punto){
-        if(tamaño == pila.lenght)
+        public void push(Punto punto){
+        if(tamaño == pila.length)
             throw new IndexOutOfBoundsException();
         pila[tamaño++]=punto;
-        tamaño++;
     }
     public void pop(){
         if(tamaño == 0)
