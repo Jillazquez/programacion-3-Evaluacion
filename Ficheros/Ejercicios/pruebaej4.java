@@ -12,8 +12,7 @@ public class ej4 {
 
         BufferedReader reader = null;
         BufferedWriter writer = null;
-        //Comentario de prueba
-        try {
+                try {
             int num;
             reader = new BufferedReader(new FileReader(args[0]));
             writer = new BufferedWriter(new FileWriter(args[1]));
